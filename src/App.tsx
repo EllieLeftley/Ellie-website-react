@@ -14,12 +14,14 @@ import { Logo } from "./Logo"
 import WithSubnavigation from "./Navigation"
 import SimplyGlutenFree from "./SimplyGlutenFree"
 import LocateLocal from "./LocateLocal"
+import IconLibrary from "./IconLibrary"
 
 export const App = () => (
   <ChakraProvider theme={theme}>
     <WithSubnavigation />
     <SimplyGlutenFree />
     <LocateLocal />
+    <IconLibrary />
     {/* <Box textAlign="center" fontSize="xl">
       <Grid minH="100vh" p={3}>
         <ColorModeSwitcher justifySelf="flex-end" />
