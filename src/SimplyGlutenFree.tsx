@@ -56,7 +56,7 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
   );
 };
 
-const ArticleList = () => {
+const SimplyGlutenFree = () => {
   return (
     <Container maxW={'7xl'} p="12">
         <VStack paddingTop="40px" paddingBottom="40px" spacing="2" alignItems="flex-start">
@@ -123,10 +123,7 @@ const ArticleList = () => {
             marginTop="2"
             color={useColorModeValue('gray.700', 'gray.200')}
             fontSize="lg">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
+A food app enabling individuals who follow a gluten free diet, to find food supplies, recipes and restaurants with ease.
           </Text>
           {/* <BlogAuthor name="John Doe" date={new Date('2021-04-06T19:01:27Z')} /> */}
         </Box>
@@ -135,4 +132,4 @@ const ArticleList = () => {
   );
 };
 
-export default ArticleList;
+export default SimplyGlutenFree;

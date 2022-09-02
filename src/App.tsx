@@ -12,12 +12,14 @@ import {
 import { ColorModeSwitcher } from "./ColorModeSwitcher"
 import { Logo } from "./Logo"
 import WithSubnavigation from "./Navigation"
-import BlogAuthor from "./Project"
+import SimplyGlutenFree from "./SimplyGlutenFree"
+import LocateLocal from "./LocateLocal"
 
 export const App = () => (
   <ChakraProvider theme={theme}>
     <WithSubnavigation />
-    <BlogAuthor />
+    <SimplyGlutenFree />
+    <LocateLocal />
     {/* <Box textAlign="center" fontSize="xl">
       <Grid minH="100vh" p={3}>
         <ColorModeSwitcher justifySelf="flex-end" />
