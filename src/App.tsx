@@ -15,9 +15,12 @@ import WithSubnavigation from "./Navigation"
 import SimplyGlutenFree from "./SimplyGlutenFree"
 import LocateLocal from "./LocateLocal"
 import IconLibrary from "./IconLibrary"
+import SimplyGlutenFreePage from "./SimplyGlutenFreePage"
+
 
 export const App = () => (
   <ChakraProvider theme={theme}>
+    {/* <SimplyGlutenFreePage /> */}
     <WithSubnavigation />
     <SimplyGlutenFree />
     <LocateLocal />
