@@ -21,7 +21,8 @@ import {
     ChevronDownIcon,
     ChevronRightIcon,
   } from '@chakra-ui/icons';
-  
+  import { Link as ReactRouterLink } from "react-router-dom";
+
   export default function WithSubnavigation() {
     const { isOpen, onToggle } = useDisclosure();
   
@@ -51,12 +52,15 @@ import {
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-            <Text
+            <Link href='/' >
+                <Text
               textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
               fontFamily={'heading'}
               color={useColorModeValue('gray.800', 'white')}>
               Ellie Leftley
-            </Text>
+            </Text>            
+            </Link>
+
   
             <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
               <DesktopNav />
@@ -73,7 +77,7 @@ import {
               fontSize={'sm'}
               fontWeight={400}
               variant={'link'}
-              href={'#'}
+              href={'#portfolio'}
                             _hover={{
                 color: 'pink',
                 textDecoration: 'underline',

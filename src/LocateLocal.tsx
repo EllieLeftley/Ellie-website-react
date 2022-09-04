@@ -74,7 +74,7 @@ const LocateLocal = () => {
             zIndex="2"
             marginLeft={{ base: '0', sm: '5%' }}
             marginTop="5%">
-            <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+            <Link href='/locate-local' textDecoration="none" _hover={{ textDecoration: 'none' }}>
               <Image
                 borderRadius="lg"
                 src={
@@ -105,7 +105,7 @@ const LocateLocal = () => {
           marginTop={{ base: '3', sm: '0' }}>
           <BlogTags tags={['Mobile', 'Website']} />
           <Heading marginTop="1">
-            <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+            <Link href='/locate-local' textDecoration="none" _hover={{ textDecoration: 'none' }}>
               Locate Local
             </Link>
           </Heading>

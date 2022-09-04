@@ -83,7 +83,7 @@ const SimplyGlutenFree = () => {
             zIndex="2"
             marginLeft={{ base: '0', sm: '5%' }}
             marginTop="5%">
-            <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+            <Link href='/simply-gluten-free' textDecoration="none" _hover={{ textDecoration: 'none' }}>
               <Image
                 borderRadius="lg"
                 src={
@@ -114,7 +114,7 @@ const SimplyGlutenFree = () => {
           marginTop={{ base: '3', sm: '0' }}>
           <BlogTags tags={['Mobile']} />
           <Heading marginTop="1">
-            <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+            <Link href='/simply-gluten-free' textDecoration="none" _hover={{ textDecoration: 'none' }}>
               Simply Gluten Free
             </Link>
           </Heading>

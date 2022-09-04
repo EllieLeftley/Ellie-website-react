@@ -17,18 +17,32 @@ import IconLibrary from "./IconLibrary"
 import SimplyGlutenFreePage from "./SimplyGlutenFreePage"
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
+  Routes,
   Link
 } from "react-router-dom";
+import LocateLocalPage from "./LocateLocalPage"
+
+export const Home = () => (
+<>
+    <SimplyGlutenFree />
+    <LocateLocal />
+    <IconLibrary />
+    </>
+);
 
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-        <WithSubnavigation />
-    <SimplyGlutenFree />
-    <LocateLocal />
-    <IconLibrary />
+    <WithSubnavigation />
+      <Router>
+      <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="simply-gluten-free" element={<SimplyGlutenFreePage />} />
+      <Route path="locate-local" element={<LocateLocalPage />} />
+    </Routes>
+      </Router>
+
     {/* <Box textAlign="center" fontSize="xl">
       <Grid minH="100vh" p={3}>
         <ColorModeSwitcher justifySelf="flex-end" />

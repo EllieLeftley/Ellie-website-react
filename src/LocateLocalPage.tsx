@@ -14,7 +14,7 @@ import {
     OrderedList,
 } from '@chakra-ui/react';
 
-export default function SimplyGlutenFreePage() {
+export default function LocateLocalPage() {
     return (
         <>
             <Box bg={'pink.800'} position={'relative'}>
@@ -57,7 +57,7 @@ export default function SimplyGlutenFreePage() {
                                     color={'white'}
                                     mb={5}
                                     fontSize={{ base: '3xl', md: '5xl' }}>
-                                    Simply Gluten Free
+                                   Locate Local
                                 </Heading>
                                 <Text fontSize={'xl'} color={'white'}>
                                     As someone who has a Gluten free restricted diet, I often found myself searching through magazines, blogs and online stores to find places to eat out, to shop and to discover new recipes. This proved to be time consuming and often resulted with little success.
