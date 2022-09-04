@@ -7,6 +7,10 @@ import {
   Text,
   Heading,
   SimpleGrid,
+  ListItem,
+  UnorderedList,
+  Image,
+  Link,
 } from '@chakra-ui/react';
 
 export default function SimplyGlutenFreePage() {
@@ -17,7 +21,7 @@ export default function SimplyGlutenFreePage() {
         flex={1}
         zIndex={0}
         display={{ base: 'none', lg: 'flex' }}
-        backgroundImage="url('https://cdn-prod.medicalnewstoday.com/content/images/articles/324/324494/gluten-free-pancakes-for-different-diets-topped-with-blueberries-and-nuts.jpg')"
+        backgroundImage="url('https://i.ibb.co/jwGKfF6/Screen-Shot-2021-02-28-at-12-44-48.png')"
         backgroundSize={'cover'}
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
@@ -68,7 +72,95 @@ export default function SimplyGlutenFreePage() {
 
     </Box>
     <Box position={'relative'}>
-          hello
+    <Container maxW={'7xl'} p="12">
+      <Text as={'h2'} fontSize='xl' fontWeight={'bold'}>
+      Research
+        </Text>
+        <Text as={'h2'} marginTop='5' fontSize='xl'>
+      Desktop Research
+        </Text>
+        <Text as='p' marginTop='5' >
+        I began my investigation by carrying out desktop research. Across different mediums; books, magazines, websites and apps, I searched to find whether a solution to my problem currently exists in the market.
+        <br/><br></br>
+I searched in local grocery stores, online and through app stores including IOS app store and Android app store. Search terms included ‘gluten ree’, 'restaurants', 'recipes', ‘food apps’, ‘recipe apps’ and ‘restaurant finder apps’.
+<br/><br></br>
+With each source of information, I read reviews to further understand the aims of readers and users and also to discover where perhaps it did not meet their expectations.
+<br/><br></br>
+From my desktop research, I found that different mediums each gave specific information into one or more areas I was searching for; recipes, restaurants and food supplies. However, there was not one medium that acted as a sole host of all this information.
+<br/><br></br>
+Apps I reviewed included:
+       
+<UnorderedList>
+  <ListItem>Gluten free heaven</ListItem>
+  <ListItem>How to be Gluten free and keep your friends</ListItem>
+  <ListItem>Simple Vegan: Recipes and Guides</ListItem>
+  <ListItem>Meals - Healthy meal planner</ListItem>
+</UnorderedList>
+        </Text>
+        {/* <Box
+        marginTop={{ base: '1', sm: '5' }}
+        display="flex"
+        flexDirection={{ base: 'column', sm: 'row' }}
+        justifyContent="space-between">
+        <Box
+          display="flex"
+          flex="1"
+          marginRight="3"
+          position="relative"
+          alignItems="center">
+          <Box
+            width={{ base: '100%', sm: '85%' }}
+            zIndex="2"
+            marginLeft={{ base: '0', sm: '5%' }}
+            marginTop="5%">
+            <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+              <Image
+                borderRadius="lg"
+                src={
+                  'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
+                }
+                alt="some good alt text"
+                objectFit="contain"
+              />
+            </Link>
+          </Box>
+          <Box zIndex="1" width="100%" position="absolute" height="100%">
+            <Box
+              bgGradient=
+                'radial(orange.300 1px, transparent 1px)'
+              backgroundSize="20px 20px"
+              opacity="0.4"
+              height="100%"
+            />
+          </Box>
+        </Box>
+        <Box
+          display="flex"
+          flex="1"
+          flexDirection="column"
+          justifyContent="center"
+          marginTop={{ base: '3', sm: '0' }}>
+   
+          <Heading marginTop="1">
+            <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
+              Blog article title
+            </Link>
+          </Heading>
+          <Text
+            as="p"
+            marginTop="2"
+            fontSize="lg">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </Text>
+        </Box>
+      </Box> */}
+        <Image src='appscreenshotone.png' />
+        <Image src='appscreenshottwo.png' />
+
+      </Container>
         </Box>
         </>
   );

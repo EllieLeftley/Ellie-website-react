@@ -3,7 +3,6 @@ import {
   ChakraProvider,
   Box,
   Text,
-  Link,
   VStack,
   Code,
   Grid,
@@ -16,12 +15,17 @@ import SimplyGlutenFree from "./SimplyGlutenFree"
 import LocateLocal from "./LocateLocal"
 import IconLibrary from "./IconLibrary"
 import SimplyGlutenFreePage from "./SimplyGlutenFreePage"
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    {/* <SimplyGlutenFreePage /> */}
-    <WithSubnavigation />
+        <WithSubnavigation />
     <SimplyGlutenFree />
     <LocateLocal />
     <IconLibrary />
