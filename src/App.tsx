@@ -22,9 +22,12 @@ import {
   Link
 } from "react-router-dom";
 import LocateLocalPage from "./LocateLocalPage"
+import UxProject from "./UxProject"
+import UxProjectPage from "./UxProjectPage"
 
 export const Home = () => (
 <>
+<UxProject />
     <SimplyGlutenFree />
     <LocateLocal />
     <IconLibrary />
@@ -40,6 +43,7 @@ export const App = () => (
       <Route path="/" element={<Home />} />
       <Route path="simply-gluten-free" element={<SimplyGlutenFreePage />} />
       <Route path="locate-local" element={<LocateLocalPage />} />
+      <Route path="ux-project" element={<UxProjectPage />} />
     </Routes>
       </Router>
 

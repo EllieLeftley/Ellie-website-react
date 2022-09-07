@@ -42,7 +42,7 @@ export default function LocateLocalPage() {
                             flex={1}
                             color={'white'}
                             justify={{ lg: 'center' }}
-                            py={{ base: 4, md: 20, xl: 60 }}>
+                            py={{ base: 4, md: 20, xl: 20 }}>
                             <Box mb={{ base: 8, md: 20 }}>
                                 <Text
                                     fontFamily={'heading'}
@@ -51,7 +51,7 @@ export default function LocateLocalPage() {
                                     mb={3}
                                     fontSize={'xl'}
                                     color={'white.500'}>
-                                    Personal project | 2020
+                                    Personal project 
                                 </Text>
                                 <Heading
                                     color={'white'}
@@ -59,11 +59,12 @@ export default function LocateLocalPage() {
                                     fontSize={{ base: '3xl', md: '5xl' }}>
                                    Locate Local
                                 </Heading>
-                                <Text fontSize={'xl'} color={'white'}>
-                                    As someone who has a Gluten free restricted diet, I often found myself searching through magazines, blogs and online stores to find places to eat out, to shop and to discover new recipes. This proved to be time consuming and often resulted with little success.
+                                <Text fontSize={'lg'} color={'white'}>
+                                A business directory allowing users to find busiensses and services in their local area.
+                                <br /><br></br>
                                 </Text>
-                                <Text fontSize={'xl'} color={'white'}>
-                                    Therefore, I decided to investigate whether this was a common issue with those who follow a gluten free diet and if so, whether I could develop a potential solution.
+                                <Text fontSize={'lg'} color={'white'}>
+                                User research | Prototyping | Visual design 
                                 </Text>
                             </Box>
                         </Stack>
@@ -73,111 +74,38 @@ export default function LocateLocalPage() {
 
             </Box>
             <Box position={'relative'}>
-                <Container maxW={'7xl'} p="12">
+                <Container maxW={'4xl'} p="12">
+                    <Text as={'h2'} fontSize='xl' fontWeight={'bold'}>
+                        The challenge
+                    </Text>
+                    <Text as='p' marginTop='5' >
+                    Throughout the global pandemic, there has been continued encouragement to support local businesses. However, I often found it difficult to identify businesses that operate in the local area, especially those business who are based online. 
+                        <br /><br></br>
+                        When searching for local businesses I frequently encountered a few issues:
+
+                        <UnorderedList>
+                            <ListItem>Information is spread across different platforms (e.g. online directories, local social media pages)</ListItem>
+                            <ListItem>Business directories often only have contact information and do not show much business information or product images</ListItem>
+                        </UnorderedList>
+                    </Text>
+                    <br /><br></br>
                     <Text as={'h2'} fontSize='xl' fontWeight={'bold'}>
                         Research
                     </Text>
                     <Text as={'h2'} marginTop='5' fontSize='xl'>
                         Desktop Research
                     </Text>
-                    <Text as='p' marginTop='5' >
-                        I began my investigation by carrying out desktop research. Across different mediums; books, magazines, websites and apps, I searched to find whether a solution to my problem currently exists in the market.
-                        <br /><br></br>
-                        I searched in local grocery stores, online and through app stores including IOS app store and Android app store. Search terms included ‘gluten ree’, 'restaurants', 'recipes', ‘food apps’, ‘recipe apps’ and ‘restaurant finder apps’.
-                        <br /><br></br>
-                        With each source of information, I read reviews to further understand the aims of readers and users and also to discover where perhaps it did not meet their expectations.
-                        <br /><br></br>
-                        From my desktop research, I found that different mediums each gave specific information into one or more areas I was searching for; recipes, restaurants and food supplies. However, there was not one medium that acted as a sole host of all this information.
-                        <br /><br></br>
-                        Apps I reviewed included:
-
-                        <UnorderedList>
-                            <ListItem>Gluten free heaven</ListItem>
-                            <ListItem>How to be Gluten free and keep your friends</ListItem>
-                            <ListItem>Simple Vegan: Recipes and Guides</ListItem>
-                            <ListItem>Meals - Healthy meal planner</ListItem>
-                        </UnorderedList>
-                    </Text>
-                    {/* <Box
-        marginTop={{ base: '1', sm: '5' }}
-        display="flex"
-        flexDirection={{ base: 'column', sm: 'row' }}
-        justifyContent="space-between">
-        <Box
-          display="flex"
-          flex="1"
-          marginRight="3"
-          position="relative"
-          alignItems="center">
-          <Box
-            width={{ base: '100%', sm: '85%' }}
-            zIndex="2"
-            marginLeft={{ base: '0', sm: '5%' }}
-            marginTop="5%">
-            <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-              <Image
-                borderRadius="lg"
-                src={
-                  'https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80'
-                }
-                alt="some good alt text"
-                objectFit="contain"
-              />
-            </Link>
-          </Box>
-          <Box zIndex="1" width="100%" position="absolute" height="100%">
-            <Box
-              bgGradient=
-                'radial(orange.300 1px, transparent 1px)'
-              backgroundSize="20px 20px"
-              opacity="0.4"
-              height="100%"
-            />
-          </Box>
-        </Box>
-        <Box
-          display="flex"
-          flex="1"
-          flexDirection="column"
-          justifyContent="center"
-          marginTop={{ base: '3', sm: '0' }}>
-   
-          <Heading marginTop="1">
-            <Link textDecoration="none" _hover={{ textDecoration: 'none' }}>
-              Blog article title
-            </Link>
-          </Heading>
-          <Text
-            as="p"
-            marginTop="2"
-            fontSize="lg">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book.
-          </Text>
-        </Box>
-      </Box> */}
-                    <Image src='appscreenshotone.png' />
-                    <Image src='appscreenshottwo.png' />
-
-                    <Text as={'h2'} marginTop='5' fontSize='xl'>
-                        Interviews
-                    </Text>
-
-                    <Text as='p' marginTop='5' >
-                    Following on from the desktop research, I wanted to confirm whether the problem was one that was a common experience for others. To do so I carried out qualitative research in the form of interviews, on individuals who follow a Gluten Free diet. My aim was to understand and identify the needs of those who follow a gluten free diet as well as some of their challenges.
-                        <br /><br></br>
-                        Some of the questions used in the interviews included:
-                        <br /><br></br>
+                    I began my desktop research by reviewing a variety of sources where business local to my area promote their products and services. This included business directories, local community webpages and local social media groups.
+                    <br /><br></br>
+When reviewing these online platforms my aim was to explore how easily and efficiently I could find particular business. I gave myself a number of services and products to search for locally. I used the below questions to guide this research:
+                        <br /><br></br>                    
                         <OrderedList marginLeft='10'>
-                            <ListItem>What are your reasons for following a Gluten Free diet?</ListItem>
-                            <ListItem>What do you enjoy most about following a Gluten Free diet?</ListItem>
-                            <ListItem>What do you find most difficult about following a Gluten Free diet?</ListItem>
+                            <ListItem>Can I firstly find the product and/or service that I’m looking for?</ListItem>
+                            <ListItem>Am I able view images of the product and/or service on that platform?</ListItem>
+                            <ListItem>How easily can I navigate to find the product/service? What errors am I making?</ListItem>
                         </OrderedList>
-                        <br />
-                        To help make sense of my interview findings, I grouped common problems through the tool of an affinity map. From this exercise, I was able to identify two key problems which had the greatest impact on the majority of those who I interviewed.
-
+                        <Text as={'h2'} marginTop='5' fontSize='xl'>
+                        Desktop Research
                     </Text>
                 </Container>
             </Box>

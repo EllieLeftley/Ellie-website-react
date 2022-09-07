@@ -56,10 +56,12 @@ export const BlogAuthor: React.FC<BlogAuthorProps> = (props) => {
   );
 };
 
-const LocateLocal = () => {
+const UxProject = () => {
   return (
     <Container maxW={'7xl'} p="12">
+
       <Box
+        marginTop={{ base: '1', sm: '5' }}
         display="flex"
         flexDirection={{ base: 'column', sm: 'row' }}
         justifyContent="space-between">
@@ -74,7 +76,7 @@ const LocateLocal = () => {
             zIndex="2"
             marginLeft={{ base: '0', sm: '5%' }}
             marginTop="5%">
-            <Link href='/locate-local' textDecoration="none" _hover={{ textDecoration: 'none' }}>
+            <Link href='/ux-project' textDecoration="none" _hover={{ textDecoration: 'none' }}>
               <Image
                 borderRadius="lg"
                 src={
@@ -103,10 +105,10 @@ const LocateLocal = () => {
           flexDirection="column"
           justifyContent="center"
           marginTop={{ base: '3', sm: '0' }}>
-          <BlogTags tags={['Website']} />
+          <BlogTags tags={['Mobile']} />
           <Heading marginTop="1">
-            <Link href='/locate-local' textDecoration="none" _hover={{ textDecoration: 'none' }}>
-              Locate Local
+            <Link href='/ux-project' textDecoration="none" _hover={{ textDecoration: 'none' }}>
+              Ux Project
             </Link>
           </Heading>
           <Text
@@ -114,7 +116,7 @@ const LocateLocal = () => {
             marginTop="2"
             color={useColorModeValue('gray.700', 'gray.200')}
             fontSize="lg">
-A business directory allowing users to find busiensses and services in their local area.
+An airline booking website developed as part of my Professional Diploma in UX Design.
           </Text>
           {/* <BlogAuthor name="John Doe" date={new Date('2021-04-06T19:01:27Z')} /> */}
         </Box>
@@ -123,4 +125,4 @@ A business directory allowing users to find busiensses and services in their loc
   );
 };
 
-export default LocateLocal;
+export default UxProject;
